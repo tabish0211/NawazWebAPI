@@ -81,6 +81,7 @@ namespace NawazDemoWebApi.Controllers
         // DELETE api/Customer/1
         public void Delete(int id)
         {
+            //sample check-in
             CustomerContext contxt = new CustomerContext();
             var result = contxt.Customers.Where(c => c.Id == id).SingleOrDefault();
             if (result != null)
